@@ -77,7 +77,7 @@ const order = {
 
 //Write function to filter menu items by Category and sort them alphabetically
 function listByCategory1(menu,categoryName){
-    let filterResult = menu.filter(item=>  item.category == 'Beverages')
+    let filterResult = menu.filter(item=>  item.category == categoryName)
     .map(item=>{
         return 'category : ' + categoryName +"  name: " + item.name + "   price : " + item.price
     })
